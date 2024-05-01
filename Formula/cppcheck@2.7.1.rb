@@ -7,7 +7,9 @@ class CppcheckAT271 < Formula
   head "https://github.com/danmar/cppcheck.git", branch: "main"
 
   bottle do
-    sha256 ventura: "c80b238d13fb249b9a9a5e38773218a5b16d542717a7f7e80c1268b87afd980f"
+    root_url "https://github.com/DojoFive/homebrew-dojofive/releases/download/cppcheck@2.7.1-2.7.1"
+    rebuild 1
+    sha256 x86_64_linux: "0339f89f85514ecf82baeb9fea995ed16307c82d80789b08f58cbd6234e3791a"
   end
 
   depends_on "cmake" => :build
