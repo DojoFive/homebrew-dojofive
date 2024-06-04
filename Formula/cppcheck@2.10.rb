@@ -6,6 +6,11 @@ class CppcheckAT210 < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/danmar/cppcheck.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/DojoFive/homebrew-dojofive/releases/download/cppcheck@2.10-2.10"
+    sha256 x86_64_linux: "78e7776ca47217135e64e5e424c38570465301e94f19ed2574ca99a5fffc2709"
+  end
+
   depends_on "cmake" => :build
   depends_on "python@3.11" => [:build, :test]
   depends_on "pcre"
